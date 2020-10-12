@@ -11,7 +11,7 @@
      Account Number : 16345225 , PIN : 9630
 ```
 **/> You can also add your preferred credentials to test the code**
-```    
+``` yaml   
         1.> - Navigate to MENU class 
         2.> - In line 20, change values inside " data.put(xxxxxxx,xxxxx) " as you wish
         

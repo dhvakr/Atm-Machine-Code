@@ -5,7 +5,7 @@ public class Validation    /* Account Validating class */
 	DecimalFormat moneyFormat = new DecimalFormat("'$'###,##0.00");
 
 	// Getters and Setters for Account number
-	public void setAccountNumber(int account_number)
+	public void setAccountNumber(final int account_number)
 	{   
 		this.account_number = account_number;
 	}
@@ -15,7 +15,7 @@ public class Validation    /* Account Validating class */
 	}
 
     // Getters and Setters for Pin number 
-	public void setPinNumber(short pin_number)
+	public void setPinNumber(final short pin_number)
 	{
 		this.pin_number = pin_number;
 	}
@@ -37,24 +37,24 @@ public class Validation    /* Account Validating class */
 	}
 
     // Calculate the Withdrawal Balance on both accounts
-	public double CurrentBalanceWithdrawal(double amount)
+	public double CurrentBalanceWithdrawal(final double amount)
 	{
 		initial_current_balance = (initial_current_balance - amount);
 		return initial_current_balance;
 	}
-    public double SavingsBalanceWithdrawal(double amount)        
+    public double SavingsBalanceWithdrawal(final double amount)        
 	{
 		initial_savings_balance = (initial_savings_balance - amount);
 		return initial_savings_balance;
 	}
 
 	// Calculate the Deposit Balance on both accounts
-    public double CurrentBalanceDeposit(double amount)            
+    public double CurrentBalanceDeposit(final double amount)            
 	{
 		initial_current_balance = (initial_current_balance + amount);
 		return initial_current_balance;
 	}  
-    public double SavingsBalanceDeposit(double amount)            
+    public double SavingsBalanceDeposit(final double amount)            
 	{
 		initial_savings_balance = (initial_savings_balance + amount);
 		return initial_savings_balance;

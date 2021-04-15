@@ -64,16 +64,16 @@ public class Menu extends Validation
 			case 1 : CurrentAccount();
 			case 2 : SavingsAccount();
 			case 3 : 
-			{
-				Atm.exitMessage();
-				System.exit(0);
-			}
+				{
+					Atm.exitMessage();
+					System.exit(0);
+				}
 			default : 
-			{
-				Atm.invalid();
-				System.out.println("\n\tReturning to Account Type ^-^ ");
-				AccountType();
-			}
+				{
+					Atm.invalid();
+					System.out.println("\n\tReturning to Account Type ^-^ ");
+					AccountType();
+				}
 		}
 	}
 
@@ -93,35 +93,37 @@ public class Menu extends Validation
 		case 1:
 		    System.out.println("\nYour Current Account Balance : " + moneyFormat.format(getCurrentBalance()));
 		    Atm.delay();
+
 		    if(getCurrentBalance() <= 0)
 			{ 
-             System.out.println("Oops, u have 'Zero(0)' balance in your Current account");
-			 System.out.println("Select Type '3' to Deposit Funds"); Atm.delay();
-			  CurrentAccount();
+				System.out.println("Oops, u have 'Zero(0)' balance in your Current account");
+				System.out.println("Select Type '3' to Deposit Funds"); Atm.delay();
+				CurrentAccount();
 			}
 			else
 			{ 
-			  AccountType();
+				System.out.println("\n\tReturning to Account Type ^-^ ");
+			  	AccountType();
 			}
 			break;
 		case 2:	    
-			CurrentWithdrawFunds(); Atm.delay();
-		    AccountType(); 
-		    break;
+				CurrentWithdrawFunds(); Atm.delay();
+				AccountType(); 
+				break;
 		case 3:
-			CurrentDepositFunds(); 
-			System.out.println("\n\nReturning to Current Account ^-^"); Atm.delay();
-		    CurrentAccount();   
-			break;
+				CurrentDepositFunds(); 
+				System.out.println("\n\nReturning to Current Account ^-^"); Atm.delay();
+				CurrentAccount();   
+				break;
 		case 4 :
-			AccountType();
+				AccountType();
 		case 5:
-            Atm.exitMessage(); 
-		    System.exit(0); 
+				Atm.exitMessage(); 
+				System.exit(0); 
 		default: 
-		    Atm.invalid(); 
-		    System.out.println("\n\tReturning to Current Account ^-^ "); 
-		    CurrentAccount();
+				Atm.invalid(); 
+				System.out.println("\n\tReturning to Current Account ^-^ "); 
+				CurrentAccount();
 		}
 	}
 
@@ -139,37 +141,38 @@ public class Menu extends Validation
 		switch(type)
 		{
 		case 1:
-			System.out.println("Your Savings Account Balance is : " + moneyFormat.format(getSavingBalance()));
-            Atm.delay();
-			if(getSavingBalance() <= 0)
-			{ 
-             System.out.println("Oops, u have 'Zero(0)' balance in your savings account");
-			 System.out.println("   Select Type '3' to Deposit Funds"); Atm.delay();
-			  SavingsAccount();
-			}
-			else
-			{ 
-			  AccountType();
-			}
-			break;
+				System.out.println("Your Savings Account Balance is : " + moneyFormat.format(getSavingBalance()));
+				Atm.delay();
+				if(getSavingBalance() <= 0)
+				{ 
+					System.out.println("Oops, u have 'Zero(0)' balance in your savings account");
+					System.out.println("   Select Type '3' to Deposit Funds"); Atm.delay();
+					SavingsAccount();
+				}
+				else
+				{ 
+					System.out.println("\n\tReturning to Account Type ^-^ ");
+					AccountType();
+				}
+				break;
 		case 2:		  
-			SavingsWithdrawFunds(); Atm.delay();
-			AccountType(); 
-			break;
+				SavingsWithdrawFunds(); Atm.delay();
+				AccountType(); 
+				break;
 		case 3:
-			SavingsDepositFunds();
-			System.out.println("\n\nReturning to Savings Account ^-^"); Atm.delay();
-		    SavingsAccount(); 
-			break;
+				SavingsDepositFunds();
+				System.out.println("\n\nReturning to Savings Account ^-^"); Atm.delay();
+				SavingsAccount(); 
+				break;
 		case 4 :
-			AccountType();
+				AccountType();
 		case 5:
-			Atm.exitMessage(); 
-			System.exit(0);
+				Atm.exitMessage(); 
+				System.exit(0);
 		default:
-			Atm.invalid(); 
-			System.out.println("\n\tReturning to Savings Account ^-^ "); 
-			SavingsAccount();
+				Atm.invalid(); 
+				System.out.println("\n\tReturning to Savings Account ^-^ "); 
+				SavingsAccount();
 		}
 	}
 }

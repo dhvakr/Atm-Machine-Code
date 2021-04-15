@@ -35,19 +35,19 @@ public class Atm   /* Main Class */
 	{   
        try 
        {
-        System.out.println(" \n\t\t " + " Welcome to Virtual ATM "); 
+            System.out.println(" \n\t\t " + " Welcome to Virtual ATM "); 
 
-		 Menu option = new Menu();
-         option.login();
-         input.close();
+            Menu option = new Menu();
+            option.login();
+            input.close();
        } 
-       catch(Exception z)
+       catch(final Exception am)
        { 
-         System.err.println("\tATM is Temporary Out Of Service");
+            System.err.println("\tATM is Temporary Out Of Service");
        } 
        finally
        { 
-         System.out.println("\n\t Something Went Wrong\n\n");
+            System.out.println("\n\t Something Went Wrong\n\n");
        }        
     }
 // ------------- Repetition Global Methods ------------- //
@@ -56,14 +56,14 @@ public class Atm   /* Main Class */
         for (int dot = 1; dot <= 3 ; dot++)
         {
             System.out.print(".");
-            Thread.sleep(550);
+            Thread.sleep(450);
         }
     }
     public static void delay() throws InterruptedException
     {
         for (int delay = 0; delay <= 3 ; delay++)
         {
-            Thread.sleep(200);
+            Thread.sleep(140);
         }
     }
     public static void exitMessage()

@@ -22,18 +22,21 @@
 
 ```yaml
 Clone Repo:
-  https://github.com/dhvakr/
+        https://github.com/dhvakr/
 ```  
 Found any bug !? Please create an issue, before making Pull Request 
 
-## License
+---
+### `LICENSE -> ` 
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
+---
 ### REMEMBER :
 *  Your Initial balance is Always Zero(0), " Do Deposit some amount before withdrawing amount "
 *  Carefull when modifying variables may cause errors"
 *  You're Good to go ♥
+
 
 #### Contact :
 

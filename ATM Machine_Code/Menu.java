@@ -1,14 +1,13 @@
-//package atm
-import java.text.DecimalFormat;
 import java.util.HashMap;
-import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Map.Entry;
+import java.io.IOException;
+import java.text.DecimalFormat;
 
-public class Menu extends Validation    /* Menu class */
+public class Menu extends Validation    
 {  
 	DecimalFormat moneyFormat = new DecimalFormat("'$'###,##0.00");
-	HashMap<Integer, Integer> data = new HashMap<Integer, Integer>();  
+	HashMap<Integer, Integer> data = new HashMap<>();  
 
 	public void login() throws IOException , Exception    
 	{
@@ -16,8 +15,7 @@ public class Menu extends Validation    /* Menu class */
 	   do 
 	  {   
 		try 
-		{	 //Assigning Keys and Values for Login into account
-			
+		{	 // Assigning Keys and Values for Login into account			
 		       data.put(73974994, 6300);      
 			   data.put(94793113, 7410);       
                data.put(45101100, 8520);      
@@ -32,53 +30,54 @@ public class Menu extends Validation    /* Menu class */
 			System.out.print("\t\nVALIDATING DATABASE"); Atm.dot(); 
 		} 
 		catch(InputMismatchException in) 
-		{   
+		{ 
 			// Are u such a dumb ? to enter characters or symbols,when asking for a number !?
 			// So this exception is for u
 			System.err.println("\007"+"\n** Invalid character(s). Only numbers allowed **" + "\n");
             b = false;  
 		}
-		if(b == true)
+		if(b)
 		{
 		 for(Entry<Integer, Integer> entry : data.entrySet()) 
 		   {
 			 if(entry.getKey() == getAccountNumber() && entry.getValue() == getPinNumber()) 
 			 {  
-			 AccountType();
+			 	AccountType();
 			 }	
 		   }
 		System.err.println("\007" + "\n\n[OOPS!! Invalid Customer number (or) Pin - " + "Try Again with the correct credentials]"); 
 		}			 
-	  }while(b == true);
+	  }while(b);
     }
 
-	public void AccountType() throws Exception
+	public void AccountType() throws InterruptedException
 	{
 		System.out.println("\007"+"\n\n\t* Select the account you want to access: \n");
 		System.out.println("\t\tType 1 - Current Account"); Atm.delay();
 		System.out.println("\t\tType 2 - Savings Account"); Atm.delay();
 		System.out.println("\t\tType 3 - Exit"); Atm.delay();
 		System.out.print("Choice : "); 
-		Byte type = Atm.input.nextByte();
+		byte type = Atm.input.nextByte();
 
-		switch(type) 
+		switch (type) 
 		{
-		case 1:
-		    CurrentAccount(); 
-			break;
-		case 2:
-			SavingsAccount(); 
-			break;
-		case 3: 
-            Atm.ExitMessage();
-			System.exit(0);
-		default:
-			Atm.invalid(); 
-			System.out.println("\n\tReturning to Account Type ^-^ "); AccountType();
+			case 1 : CurrentAccount();
+			case 2 : SavingsAccount();
+			case 3 : 
+			{
+				Atm.exitMessage();
+				System.exit(0);
+			}
+			default : 
+			{
+				Atm.invalid();
+				System.out.println("\n\tReturning to Account Type ^-^ ");
+				AccountType();
+			}
 		}
 	}
 
-	public double CurrentAccount() throws Exception
+	public void CurrentAccount() throws InterruptedException
 	{
 		System.out.println("\n\tCURRENT ACCOUNT : \n"); 
 		System.out.println("\t\tType 1 - View Balance"); Atm.delay();
@@ -87,7 +86,7 @@ public class Menu extends Validation    /* Menu class */
 		System.out.println("\t\tType 4 - Return Back to AccountType");Atm.delay();
 		System.out.println("\t\tType 5 - Exit"); Atm.delay();
 		System.out.print("Choice : ");
-		Byte type = Atm.input.nextByte();
+		byte type = Atm.input.nextByte();
 		
 		switch(type) 
 		{
@@ -117,17 +116,16 @@ public class Menu extends Validation    /* Menu class */
 		case 4 :
 			AccountType();
 		case 5:
-            Atm.ExitMessage(); 
+            Atm.exitMessage(); 
 		    System.exit(0); 
 		default: 
 		    Atm.invalid(); 
 		    System.out.println("\n\tReturning to Current Account ^-^ "); 
 		    CurrentAccount();
 		}
-		return type;
 	}
 
-	public void SavingsAccount() throws Exception
+	public void SavingsAccount() throws InterruptedException
 	{
 		System.out.println("\n\tSAVINGS ACCOUNT : \n"); 
 		System.out.println("\t\tType 1 - View Balance"); Atm.delay();
@@ -136,7 +134,7 @@ public class Menu extends Validation    /* Menu class */
 		System.out.println("\t\tType 4 - Return Back to AccountType");Atm.delay();
 		System.out.println("\t\tType 5 - Exit"); Atm.delay();
 		System.out.print("Choice : ");
-		Byte type = Atm.input.nextByte();
+		byte type = Atm.input.nextByte();
 		
 		switch(type)
 		{
@@ -166,7 +164,7 @@ public class Menu extends Validation    /* Menu class */
 		case 4 :
 			AccountType();
 		case 5:
-			Atm.ExitMessage(); 
+			Atm.exitMessage(); 
 			System.exit(0);
 		default:
 			Atm.invalid(); 

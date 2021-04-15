@@ -1,4 +1,3 @@
-//package atm;
 import java.text.DecimalFormat;
 
 public class Validation    /* Account Validating class */
@@ -6,10 +5,9 @@ public class Validation    /* Account Validating class */
 	DecimalFormat moneyFormat = new DecimalFormat("'$'###,##0.00");
 
 	// Getters and Setters for Account number
-	public int setAccountNumber(int account_number) 
+	public void setAccountNumber(int account_number)
 	{   
 		this.account_number = account_number;
-		return account_number;
 	}
 	public int getAccountNumber() 
 	{
@@ -17,10 +15,9 @@ public class Validation    /* Account Validating class */
 	}
 
     // Getters and Setters for Pin number 
-	public int setPinNumber(short pin_number) 
+	public void setPinNumber(short pin_number)
 	{
 		this.pin_number = pin_number;
-		return pin_number;
 	}
 	public int getPinNumber() 
 	{
@@ -40,7 +37,7 @@ public class Validation    /* Account Validating class */
 	}
 
     // Calculate the Withdrawal Balance on both accounts
-	public double CurrentBalanceWithdrawal(double amount)        
+	public double CurrentBalanceWithdrawal(double amount)
 	{
 		initial_current_balance = (initial_current_balance - amount);
 		return initial_current_balance;
@@ -65,7 +62,7 @@ public class Validation    /* Account Validating class */
 
     // Withdrawal Input Operation for 1.Current and 2.Savings Accounts 
 
-/*1*/public void CurrentWithdrawFunds()  throws Exception
+/*1*/public void CurrentWithdrawFunds()  throws InterruptedException
 	{   
 		System.out.println("Your Current Account balance is : " + moneyFormat.format(initial_current_balance));
 		System.out.print("Enter your amount to withdraw : ");
@@ -84,7 +81,7 @@ public class Validation    /* Account Validating class */
 		    System.out.println("\007"+"\n**INSUFFICIENT BALANCE :(");
 	}
 
-/*2*/public void SavingsWithdrawFunds()  throws Exception
+/*2*/public void SavingsWithdrawFunds()  throws InterruptedException
 	{   
 		System.out.println("Your Saving Account balance is : " + moneyFormat.format(initial_savings_balance));
 		System.out.print("Enter your amount to withdraw : ");
@@ -105,7 +102,7 @@ public class Validation    /* Account Validating class */
 
      // Deposit Input Operation for 1.Current and 2.Savings Accounts 
 
-/*1*/public void CurrentDepositFunds() throws Exception
+/*1*/public void CurrentDepositFunds() throws InterruptedException
 	{
 		System.out.println("Your Current Account balance is : " + moneyFormat.format(initial_current_balance));
 		System.out.print("Enter your amount to deposit : "); Atm.delay();
@@ -124,7 +121,7 @@ public class Validation    /* Account Validating class */
         }       
 	}
 
-/*2*/public void SavingsDepositFunds() throws Exception
+/*2*/public void SavingsDepositFunds() throws InterruptedException
 	{
 		System.out.println("Your Savings Account balance is : " + moneyFormat.format(initial_savings_balance));
 		System.out.print("Enter your amount to deposit : "); Atm.delay();
@@ -147,5 +144,4 @@ public class Validation    /* Account Validating class */
 	private short pin_number;
 	private double initial_current_balance = 0;
 	private double initial_savings_balance = 0;
-	
 }

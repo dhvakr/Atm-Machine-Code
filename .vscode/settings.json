@@ -1,6 +1,0 @@
-{
-    "code-runner.clearPreviousOutput": true,
-    "files.exclude": {
-        "**/*.class": true
-    }
-}

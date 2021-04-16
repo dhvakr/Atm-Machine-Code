@@ -29,7 +29,7 @@ public class Menu extends Validation
 
 			System.out.print("\t\nVALIDATING DATABASE"); Atm.dot(); 
 		} 
-		catch(InputMismatchException in) 
+		catch(final InputMismatchException in) 
 		{ 
 			// Are u such a dumb ? to enter characters or symbols,when asking for a number !?
 			// So this exception is for u

@@ -1,4 +1,4 @@
-/*  
+/**   
 *   @TITLE : ATM Machine Code
 *   @Coded Version : 2020/Oct
 *     
@@ -19,13 +19,15 @@
 * ?> Modifying variables may cause errors
 * ?> You're Good to go ♥
 * ------------
+*   @since 2020
 *   @author DIVAKARAN - @dhvakr
+*
 *   GITHUB  : https://github.com/dhvakr 
 *   TWITTER : https://twitter.com/dhvakr 
 * ------------
 *      (THIS PROJECT IS UNDER MIT LICENSE) 
 * Feel free to provide ur feedback of my code ,Thank u
-**/
+*/
 import java.util.Scanner; 
 
 public class Atm   /* Main Class */

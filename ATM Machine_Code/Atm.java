@@ -1,6 +1,6 @@
 /**   
 *   @TITLE : ATM Machine Code
-*   @Updated Version : 2021/April
+*   @UpdatedVersion : 2021/April
 *     
 *  This contain code of ATM Machine in Core Java, works with the below given credential's
 *               ° ATM supports deposits, withdrawals and balance inquiries,

@@ -3,7 +3,8 @@
 [![GitHub followers](https://img.shields.io/github/followers/dhvakr?label=Follow&style=social)](https://github.com/dhvakr?tab=followers)
 [![Twitter Follow](https://img.shields.io/twitter/follow/dhvakr?label=Twitter&style=social)](https://twitter.com/dhvakr)
 
-**This contain code of ATM Machine in Core_JAVA, works with the below given credential's**
+**This contain code of ATM Machine in Core_JAVA, works with the below given credential's** 
+
 ```yaml
      Account Number : 73974994 , PIN : 6300
      Account Number : 94793113 , PIN : 7410
@@ -12,8 +13,8 @@
 ```
 **/> You can also add your preferred credentials to test the code**
 ``` yaml   
-        1.> - Navigate to MENU class 
-        2.> - In line 20, change values inside " data.put(xxxxxxx,xxxxx) " as you wish
+        1.> - Navigate to Menu class 
+        2.> - In line 22, change values inside " data.put(xxxxxxx,xxxxx) " or create one new entry ~ as you wish
         
         NOTE : It only allows in range of 10 digit
 ```
@@ -21,8 +22,8 @@
 ### TO-CONTRIBUTE :
 
 ```yaml
-Clone Repo:
-        https://github.com/dhvakr/
+Clone Repo :
+        https://github.com/dhvakr/Atm-Machine-Code.git
 ```  
 Found any bug !? Please create an issue, before making Pull Request 
 
@@ -33,8 +34,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 ### REMEMBER :
-*  Your Initial balance is Always Zero(0), " Do Deposit some amount before withdrawing amount "
-*  Carefull when modifying variables may cause errors"
+*  All currency is in USD $.
+*  Currently supports deposits, withdrawals and balance inquiries
+*  Your Initial balance is Always Zero(0), " Do Deposit some amount    before withdrawing amount "
+*  Carefull when modifying variables, may cause errors"
 *  You're Good to go ♥
 
 

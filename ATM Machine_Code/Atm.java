@@ -1,8 +1,10 @@
 /**   
 *   @TITLE : ATM Machine Code
-*   @Coded Version : 2020/Oct
+*   @Updated Version : 2021/April
 *     
 *  This contain code of ATM Machine in Core Java, works with the below given credential's
+*               ° ATM supports deposits, withdrawals and balance inquiries,
+*               ° All currency is in USD $.
 *
 *    Account Number : 73974994 , PIN : 6300
 *    Account Number : 94793113 , PIN : 7410
@@ -11,7 +13,7 @@
 *
 * /> You can also add your preferred credentials to test the code.
 *    1.> - Navigate to Menu class 
-*    2.> - In line 20, change values inside " data.put(xxxxxxx,xxxxx) " as you wish \☺
+*    2.> - In line 22, change values inside " data.put(xxxxxxx,xxxxx) " as you wish \☺
 *    ~NOTE : It only allows in range of 10 digit
 *
 * REMEMBER :-
@@ -19,7 +21,7 @@
 * ?> Modifying variables may cause errors
 * ?> You're Good to go ♥
 * ------------
-*   @since 2020
+*   @since 2020/Oct
 *   @author DIVAKARAN - @dhvakr
 *
 *   GITHUB  : https://github.com/dhvakr 
@@ -33,7 +35,7 @@ import java.util.Scanner;
 public class Atm   /* Main Class */
 {   
     static Scanner input = new Scanner(System.in);
-	public static final void main(String... atm) 
+	public static final void main(final String... atm) 
 	{   
        try 
        {

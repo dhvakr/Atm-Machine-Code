@@ -1,7 +1,6 @@
 import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.Map.Entry;
-import java.io.IOException;
 import java.text.DecimalFormat;
 
 public class Menu extends Validation    

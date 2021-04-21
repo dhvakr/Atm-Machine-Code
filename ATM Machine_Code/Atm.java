@@ -33,7 +33,7 @@ import java.util.Scanner;
 public class Atm   /* Main Class */
 {   
     static Scanner input = new Scanner(System.in);
-	public static void main(String[] atm) throws InterruptedException
+	public static final void main(String... atm) 
 	{   
        try 
        {
@@ -41,6 +41,7 @@ public class Atm   /* Main Class */
 
             Menu option = new Menu();
             option.login();
+            
             input.close();
        } 
        catch(final Exception am)
@@ -52,7 +53,13 @@ public class Atm   /* Main Class */
             System.out.println("\n\t Something Went Wrong\n\n");
        }        
     }
-// ------------- Repetition Global Methods ------------- //
+
+// <------------------ Repetition Global Methods ------------------> //
+
+    /**
+     * 
+     * @throws InterruptedException
+     */
     public static void dot() throws InterruptedException
     {
         for (int dot = 1; dot <= 3 ; dot++)
@@ -61,6 +68,11 @@ public class Atm   /* Main Class */
             Thread.sleep(450);
         }
     }
+
+    /**
+     * 
+     * @throws InterruptedException
+     */
     public static void delay() throws InterruptedException
     {
         for (int delay = 0; delay <= 3 ; delay++)
@@ -68,6 +80,7 @@ public class Atm   /* Main Class */
             Thread.sleep(140);
         }
     }
+
     public static void exitMessage()
     {
        System.out.println("\nThank you for using this ATM, Have a Nice day !!");

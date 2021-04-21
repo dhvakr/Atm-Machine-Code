@@ -60,8 +60,12 @@ public class Validation    /* Account Validating class */
 		return initial_savings_balance;
 	}
 
-    // Withdrawal Input Operation for 1.Current and 2.Savings Accounts 
+    // Withdrawal Input Operation for 1.Current and 2.Savings Accounts ->
 
+	/**
+	 * 
+	 * @throws InterruptedException
+	 */
 /*1*/public void CurrentWithdrawFunds()  throws InterruptedException
 	{   
 		System.out.println("Your Current Account balance is : " + moneyFormat.format(initial_current_balance));
@@ -81,6 +85,11 @@ public class Validation    /* Account Validating class */
 		    System.out.println("\007"+"\n**INSUFFICIENT BALANCE :(");
 	}
 
+
+	/**
+	 * 
+	 * @throws InterruptedException
+	 */
 /*2*/public void SavingsWithdrawFunds()  throws InterruptedException
 	{   
 		System.out.println("Your Saving Account balance is : " + moneyFormat.format(initial_savings_balance));
@@ -100,8 +109,12 @@ public class Validation    /* Account Validating class */
 		    System.out.println("\007"+"\n**INSUFFICIENT BALANCE :(");
 	}
 
-     // Deposit Input Operation for 1.Current and 2.Savings Accounts 
+     // Deposit Input Operation for 1.Current and 2.Savings Accounts ->
 
+	 /**
+	  * 
+	  * @throws InterruptedException
+	  */
 /*1*/public void CurrentDepositFunds() throws InterruptedException
 	{
 		System.out.println("Your Current Account balance is : " + moneyFormat.format(initial_current_balance));
@@ -121,6 +134,11 @@ public class Validation    /* Account Validating class */
         }       
 	}
 
+
+	/**
+	 * 
+	 * @throws InterruptedException
+	 */
 /*2*/public void SavingsDepositFunds() throws InterruptedException
 	{
 		System.out.println("Your Savings Account balance is : " + moneyFormat.format(initial_savings_balance));
@@ -139,6 +157,7 @@ public class Validation    /* Account Validating class */
 			System.out.println("\007"+"\nYour balance is lower or equals Zero(0)");
         }       
 	}	
+	
     //Variables declaration -- do not modify (Modify may cause errors)
 	private int account_number;
 	private short pin_number;

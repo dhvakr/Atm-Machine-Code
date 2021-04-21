@@ -3,8 +3,8 @@
 *   @UpdatedVersion : 2021/April
 *     
 *  This contain code of ATM Machine in Core Java, works with the below given credential's
-*               ° ATM supports deposits, withdrawals and balance inquiries,
-*               ° All currency is in USD $.
+*         ° ATM supports deposits, withdrawals and balance inquiries,
+*         ° All currency is in USD $.
 *
 *    Account Number : 73974994 , PIN : 6300
 *    Account Number : 94793113 , PIN : 7410

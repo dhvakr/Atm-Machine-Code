@@ -13,10 +13,10 @@
 ```
 **/> You can also add your preferred credentials to test the code**
 ``` yaml   
-        1.> - Navigate to Menu class 
-        2.> - In line 22, change values inside " data.put(xxxxxxx,xxxxx) " or create one new entry ~ as you wish
+     1.> - Navigate to Menu class 
+     2.> - In line 22, change values inside " data.put(xxxxxxx,xxxxx) " or create one new entry ~ as you wish
         
-        NOTE : It only allows in range of 10 digit
+     NOTE : It only allows in range of 10 digit
 ```
 
 ### TO-CONTRIBUTE :

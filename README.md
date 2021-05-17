@@ -32,9 +32,10 @@ Clone Repo :
 Found any bug !? Please create an issue, before making Pull Request 
 
 ---
-### `LICENSE -> ` 
+### `LICENSE ? ` 
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/dhvakr/Atm-Machine-Code/blob/main/LICENSE) for more information.
+
 
 ---
 ### REMEMBER :
@@ -47,6 +48,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 #### Contact :
 
-``` Twitter : ``` [@dhvakr](https://twitter.com/dhvakr)
+`Twitter :` [@dhvakr](https://twitter.com/dhvakr)
 
 *Feel free to provide ur feedback of my code ,Thank u*

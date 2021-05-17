@@ -1,7 +1,7 @@
 ## ATM-MACHINE-CODE
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/dhvakr/Atm-Machine-Code/blob/main/LICENSE)
-[![GitHub followers](https://img.shields.io/github/followers/dhvakr?label=Follow&style=social)](https://github.com/dhvakr?tab=followers)
-[![Twitter Follow](https://img.shields.io/twitter/follow/dhvakr?label=Twitter&style=social)](https://twitter.com/dhvakr)
+[![GitHub followers](https://img.shields.io/github/followers/dhvakr.svg?label=Follow&style=social)](https://github.com/dhvakr?tab=followers)
+[![Twitter Follow](https://img.shields.io/twitter/follow/dhvakr.svg?label=Twitter&style=social)](https://twitter.com/dhvakr)
 [![GitHub issues](https://img.shields.io/github/issues/dhvakr/Atm-Machine-Code)](https://github.com/dhvakr/Atm-Machine-Code/issues)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 

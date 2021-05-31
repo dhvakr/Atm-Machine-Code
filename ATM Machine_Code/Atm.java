@@ -32,6 +32,7 @@
 */
 import java.util.Scanner; 
 
+
 public class Atm   /* Main Class */
 {   
     static Scanner input = new Scanner(System.in);
@@ -43,8 +44,6 @@ public class Atm   /* Main Class */
 
             Menu option = new Menu();
             option.login();
-            
-            input.close();
        } 
        catch(final Exception am)
        { 
@@ -52,10 +51,11 @@ public class Atm   /* Main Class */
        } 
        finally
        { 
+            input.close();
             System.out.println("\n\t Something Went Wrong\n\n");
        }        
     }
-
+ 
 // <------------------ Repetition Global Methods ------------------> //
 
     /**
@@ -93,3 +93,4 @@ public class Atm   /* Main Class */
        System.err.println("Invalid !!  Select Appropriative Selection ");
     }  
 }
+
